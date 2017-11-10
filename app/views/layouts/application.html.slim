@@ -8,6 +8,7 @@ html(lang="ja")
   body(class="#{view_id}")
     = render "flash"
     ul
+      li= link_to "Home", root_path
       li= link_to "Admin Home", admin_root_path
       li= link_to "Listing Users", admin_users_path
       li= link_to "Listing Posts", admin_posts_path
