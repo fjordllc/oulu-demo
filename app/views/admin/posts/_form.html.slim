@@ -1,0 +1,13 @@
+= form_with(model: [:admin, post], local: true) do |form|
+  = render "error", resource: post
+  .field
+    = form.label :title
+    = form.text_field :title, id: :post_title
+  .field
+    = form.label :body
+    = form.text_area :body, id: :post_body
+  .field
+    = form.label :user_id
+    = form.collection_select :user_id, User.order(:created_at), :id, :name
+  .actions
+    = form.submit

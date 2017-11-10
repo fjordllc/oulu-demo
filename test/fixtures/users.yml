@@ -1,0 +1,41 @@
+user_1:
+  email: george-washington@example.com
+  first_name: George
+  last_name: Washington
+  address: "1600 Pennsylvania Avenue, NW Washington, DC"
+  created_at: "2017-01-01 00:00:01"
+
+user_2:
+  email: jon-adams@example.com
+  first_name: John
+  last_name: Adams
+  address: "1600 Pennsylvania Avenue, NW Washington, DC"
+  created_at: "2017-01-01 00:00:02"
+
+user_3:
+  email: thomas-jefferson@example.com
+  first_name: Thomas
+  last_name: Jefferson
+  address: "1600 Pennsylvania Avenue, NW Washington, DC"
+  created_at: "2017-01-01 00:00:03"
+
+user_4:
+  email: james-madison@example.com
+  first_name: James
+  last_name: Madison
+  address: "1600 Pennsylvania Avenue, NW Washington, DC"
+  created_at: "2017-01-01 00:00:04"
+
+user_5:
+  email: james-monroe@example.com
+  first_name: James
+  last_name: Monroe
+  address: "1600 Pennsylvania Avenue, NW Washington, DC"
+  created_at: "2017-01-01 00:00:05"
+
+user_6:
+  email: andrew-jackson@example.com
+  first_name: Andrew
+  last_name: Jackson
+  address: "1600 Pennsylvania Avenue, NW Washington, DC"
+  created_at: "2017-01-01 00:00:06"

@@ -1,0 +1,18 @@
+- if notice
+  .flash.is-notice.js-close-parent.js-delay-close
+    .container
+      .flash__inner
+        .flash__message
+          p
+            = notice
+        .flash__close.js-close-parent__trigger
+          span.flash__close-icon &times;
+- if alert
+  .flash.is-alert.js-close-parent
+    .container
+      .flash__inner
+        .flash__message
+          p
+            = alert
+        .flash__close.js-close-parent__trigger
+          span.flash__close-icon &times;

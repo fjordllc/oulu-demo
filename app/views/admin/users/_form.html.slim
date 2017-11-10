@@ -1,0 +1,16 @@
+= form_with(model: [:admin, user], local: true) do |form|
+  = render "error", resource: user
+  .field
+    = form.label :email
+    = form.text_field :email, id: :user_email
+  .field
+    = form.label :first_name
+    = form.text_field :first_name, id: :user_first_name
+  .field
+    = form.label :last_name
+    = form.text_field :last_name, id: :user_last_name
+  .field
+    = form.label :address
+    = form.text_area :address, id: :user_address
+  .actions
+    = form.submit

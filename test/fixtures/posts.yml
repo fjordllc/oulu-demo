@@ -1,0 +1,24 @@
+post_1:
+  title: MyString1
+  body: MyText1
+  user: user_1
+
+post_2:
+  title: MyString2
+  body: MyText2
+  user: user_2
+
+post_3:
+  title: MyString3
+  body: MyText3
+  user: user_3
+
+post_4:
+  title: MyString4
+  body: MyText4
+  user: user_4
+
+post_5:
+  title: MyString5
+  body: MyText5
+  user: user_5

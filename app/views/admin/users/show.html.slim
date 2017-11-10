@@ -1,0 +1,19 @@
+p
+  strong
+    | Email:
+  = @user.email
+p
+  strong
+    | First name:
+  = @user.first_name
+p
+  strong
+    | Last name:
+  = @user.last_name
+p
+  strong
+    | Address:
+  = @user.address
+= link_to "Edit", edit_admin_user_path(@user)
+|  | 
+= link_to "Back", admin_users_path

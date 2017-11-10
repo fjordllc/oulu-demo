@@ -1,0 +1,32 @@
+h1 Listing Users
+table
+  thead
+    tr
+      th
+        | Email
+      th
+        | First name
+      th
+        | Last name
+      th
+        | Address
+      th[colspan="3"]
+  tbody
+    - @users.each do |user|
+      tr
+        td
+          = user.email
+        td
+          = user.first_name
+        td
+          = user.last_name
+        td
+          = user.address
+        td
+          = link_to "Show", [:admin, user]
+        td
+          = link_to "Edit", edit_admin_user_path(user)
+        td
+          = link_to "Destroy", [:admin, user], method: :delete, data: { confirm: "Are you sure?" }
+br
+= link_to "New User", new_admin_user_path
