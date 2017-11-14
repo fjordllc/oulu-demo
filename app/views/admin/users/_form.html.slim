@@ -10,6 +10,20 @@
     = form.label :last_name
     = form.text_field :last_name, id: :user_last_name
   .field
+    = form.label :gender
+    = form.label :gender_male do
+      = form.radio_button :gender, "male", id: :user_gender_male
+      | Male
+    = form.label :gender_female do
+      = form.radio_button :gender, "female", id: :user_gender_female
+      | Female
+  .field
+    = form.label :married
+    = form.check_box :married, id: :user_married
+  .field
+    = form.label :country_code
+    = form.country_select :country_code, id: :user_country_code
+  .field
     = form.label :address
     = form.text_area :address, id: :user_address
   .actions

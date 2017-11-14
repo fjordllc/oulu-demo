@@ -1,4 +1,7 @@
 h1 Listing Posts
+
+= paginate @posts
+
 table
   thead
     tr
@@ -12,11 +15,11 @@ table
         td= post.title
         td= post.body
         td= post.user.name
-        td
-          = link_to "Show", [:admin, post]
-        td
-          = link_to "Edit", edit_admin_post_path(post)
-        td
-          = link_to "Destroy", [:admin, post], method: :delete, data: { confirm: "Are you sure?" }
+        td= link_to "Show", [:admin, post]
+        td= link_to "Edit", edit_admin_post_path(post)
+        td= link_to "Destroy", [:admin, post], method: :delete, data: { confirm: "Are you sure?" }
+
+= paginate @posts
+
 br
 = link_to "New Post", new_admin_post_path

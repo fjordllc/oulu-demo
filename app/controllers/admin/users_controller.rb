@@ -2,7 +2,7 @@ class Admin::UsersController < Admin::BaseController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   def index
-    @users = User.all
+    @users = User.page(params[:page]).per(2)
   end
 
   def show
@@ -48,17 +48,10 @@ class Admin::UsersController < Admin::BaseController
         :email,
         :first_name,
         :last_name,
-        :first_name_kana,
-        :last_name_kana,
-        :prefecture_code,
-        :address_1,
-        :address_2,
-        :zip_1,
-        :zip_2,
-        :zip_3,
-        :tel_1,
-        :tel_2,
-        :tel_3
+        :country_code,
+        :address,
+        :gender,
+        :married
       )
     end
 end
